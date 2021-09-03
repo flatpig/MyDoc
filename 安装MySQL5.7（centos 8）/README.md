@@ -148,17 +148,21 @@ mysql> UPDATE user SET Host='%' WHERE User='root';
 mysql> flush privileges;
 ```
 
-### 设置默认编码为utf-8（mysql安装后默认不支持中文）
+### 设置默认编码为utf8mb4（mysql安装后默认不支持中文）
+
+一开始使用了utf8，实际使用后发现不支持表情，后面花了点时间去调查，幸好数据没有影响。
 
 ```bash
 vim /etc/my.cnf
 # 进入文件后添加下面的配置即可
 [mysqld]
-character-set-server=utf8
+character-set-client-handshake = FALSE
+character-set-server = utf8mb4
+collation-server = utf8mb4_bin
 [client]
-default-character-set=utf8
+default-character-set=utf8mb4
 [mysql]
-default-character-set=utf8
+default-character-set=utf8mb4
 
 ```
 
