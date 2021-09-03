@@ -8,8 +8,8 @@
 
 ## 安装（有坑）
 
-官网:[NextJS](https://nestjs.com/)
-[中文文档](https://docs.nestjs.cn/)
+- 官网:[NextJS](https://nestjs.com/)
+- [中文文档](https://docs.nestjs.cn/)
 
 安装Nest CLI （官方）（安装没成功！！！what a fuck！！！）
 
@@ -54,7 +54,7 @@ yarn global add @nestjs/cli
 yarn global add @nestjs/schematics
 ```
 
-## 安装总结（成功安装
+## 安装总结（成功安装）
 
 ```bash
 yarn global add @nestjs/cli
@@ -101,11 +101,11 @@ CREATE project-name/test/jest-e2e.json (183 bytes)
 ▹▹▹▹▹ Installation in progress... ☕
 ```
 
+## 安装完成
+
 等了5-6分钟终于安装好了，可能是我的系统太差了？？？此处应该有黑人问号脸
 
 ```bash
-. ☕
-
 🚀  Successfully created project project-name
 👉  Get started with the following commands:
 
